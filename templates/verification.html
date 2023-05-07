@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            margin: 0;
+            padding: 40px;
+            background-color: #f2f2f2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Add button styles */
+        .verification-button {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 16px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            font-size:16px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            text-decoration: none;
+            margin-bottom: 24px;
+        }
+
+        .verification-button:hover {
+            background-color: #0062cc;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome, <%= name %>!</h1>
+<p>Thank you for signing up. To complete your registration, please verify your email address by clicking the button below:</p>
+<!-- Change the <a> tag to a <button> tag and apply the button style -->
+<a href="<%= verificationLink %>" target="_blank" class="verification-button">Verify my email</a>
+<p>If you did not sign up for this account, please ignore this email.</p>
+<p>Thank you,</p>
+<p>RastaLion.me</p>
+</body>
+</html>
